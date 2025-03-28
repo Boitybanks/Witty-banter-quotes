@@ -7,10 +7,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <title>Wiity quotes generator</title>
   </head>
-  <h1>Welcome to Witty quotes to light you up throughout the day 😊</h1>
-  <body></body>
+  <header>
+    <h1>Welcome to Witty quotes lighten up your day 😊</h1>
+  </header>
+
+  <body>
+    <main>
+      <form>
+        <input
+          type="text"
+          id="search-input"
+          required
+          autofocus
+          placeholder="Get Witty Qoute about?"
+        />
+        <input type="submit" />
+      </form>
+
+      <div>
+        <h2>Witty Quotes</h2>
+        <div class="quote-container">
+          <p id="quote">"The only thing we have to fear is fear itself."</p>
+          <p id="author">Franklin D. Roosevelt</p>
+        </div>
+        <button id="new-quote">Get New Quote</button>
+      </div>
+    </main>
+  </body>
 
   <footer>
+    <br />
     This is coded by
     <a href="https://github.com/Boitybanks" target="_blank">
       Boitumelo Mbhele

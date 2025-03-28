@@ -2,4 +2,23 @@ h1 {
   text-align: center;
   font: 1em sans-serif;
   color: blueviolet;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: larger;
 }
+footer {
+  margin-top: 120px;
+  text-align: center;
+  padding: 6px;
+  background-color: #e5c7c7;}
+
+  html, body {
+  height: 100%;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #e5c7c7;
+  border-radius: 10px;
+  background-color: #aaa1a1;
+
+ ;}
