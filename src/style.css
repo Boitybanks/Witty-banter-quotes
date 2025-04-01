@@ -49,15 +49,18 @@ body {
   color: #555;
 }
 #new-quote {
-  color: rgb(219, 171, 171);
+  color: rgb(19, 18, 18);
   border: none;
-  font-size: 1em;
   cursor: pointer;
   border-radius: 5px;
   border: #555 solid 2px;
   background-color: #f3f0f0;
-  text-align: center;
+  text-align: center; 
 }
+
+#new-quote:hover {
+    background-color: #762a74;
+  }
 .search-input {
   width: 300px;
   display: flex;
