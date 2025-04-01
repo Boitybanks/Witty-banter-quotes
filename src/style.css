@@ -85,3 +85,10 @@ input[type="submit"]:hover {
   margin-top: 20px;
   gap: 10px;
 }
+
+#quote {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  color: black;
+}
+
