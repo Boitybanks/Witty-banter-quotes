@@ -25,8 +25,7 @@ function generateNewQuote(event) {
   event.preventDefault();
 
   let getnewquote = document.querySelector("#new-quote");
-  getnewquote.innerHTML = "Generating a new qoute on the same topic.";
-  getnewquote.style.color = "black";
+  
 
   new Typewriter("#quote", {
     strings: "Generating a new quote on the same topic.",

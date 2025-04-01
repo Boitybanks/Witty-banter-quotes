@@ -22,6 +22,7 @@ footer {
 
 html,
 body {
+  display: block;
   height: 100%;
   margin: 15px;
   display: flex;
