@@ -16,26 +16,27 @@ h2 {
   font-size: larger;
 }
 footer {
-  margin-top: 120px;
+  margin-top: 50px;
   text-align: center;
   padding: 6px;
 }
 
 html,
 body {
+  margin-top: -40px;
   display: block;
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px #e5c7c7;
-  border-radius: 10px;
-  background-color: #dd7777;
-  border: #770707 solid 1px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #74909db2;
+  box-shadow: 0 0 10px rgba(88, 9, 100, 0.1);
 }
 .container {
   align-items: center;
-  background-origin: padding-box;
+  max-width: 700px;
+  border-radius: 10px;
+  margin: 120px auto;
+  margin-bottom: 50px;
 }
 .quote-container {
   margin-top: 60px;
@@ -45,7 +46,7 @@ body {
   font-style: italic;
   color: #ca1212;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #search-input {
@@ -92,3 +93,17 @@ input[type="submit"]:hover {
   color: black;
 }
 
+#hint {
+  font-size: 0.6em;
+  color: black;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+a {
+  color: #138417;
+  text-decoration: none;
+}
+a:hover {
+  color: #762a74;
+  text-decoration: underline;
+}
