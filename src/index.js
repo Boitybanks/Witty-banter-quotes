@@ -3,34 +3,30 @@ let searchInputElement = document.querySelector("#search-input");
 console.log(searchFormElement, searchInputElement);
 searchFormElement.addEventListener("submit", generateWittyQuote);
 
+function displayQuote(response) {
+  new Typewriter("#quote", {
+    strings: response.data.answer + " - ",
+    autoStart: true,
+    DelayNode: 1,
+    cursor: " ",
+  });
+}
+
+
 function generateWittyQuote(event) {
   event.preventDefault();
-
   let quoteElement = document.querySelector("#quote");
 
-  new Typewriter("#quote", {
-    strings:
-      "The only limit to our realization of tomorrow is our doubts of today.",
-    autoStart: true,
-    DelayNode: 1,
-    cursor: " ",
-  });
+  let apikey = "0fcte29ba005o3984f3f24530ff18441";
+  let prompt = "generate a witty quote";
+  let searchInputElement = document.querySelector("#search-input");
+  let context =
+    "Generate a witty quote on the topic of " + searchInputElement.value;
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apikey}`;
+
+  axios.get(apiUrl).then(displayQuote);
+
+ 
 }
 
-let getnewquote = document.querySelector("#new-quote");
-console.log(getnewquote);
-getnewquote.addEventListener("click", generateNewQuote);
 
-function generateNewQuote(event) {
-  event.preventDefault();
-
-  let getnewquote = document.querySelector("#new-quote");
-  
-
-  new Typewriter("#quote", {
-    strings: "Generating a new quote on the same topic.",
-    autoStart: true,
-    DelayNode: 1,
-    cursor: " ",
-  });
-}
