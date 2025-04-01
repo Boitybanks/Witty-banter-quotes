@@ -21,7 +21,7 @@ function generateWittyQuote(event) {
   let prompt = "generate a witty quote";
   let searchInputElement = document.querySelector("#search-input");
   let context =
-    "Generate a witty quote on the topic of " + searchInputElement.value;
+    "Generate a witty quote on the topic of " + searchInputElement.value + " and sign it with <br/>'SheCodes AI'.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apikey}`;
 
   axios.get(apiUrl).then(displayQuote);
